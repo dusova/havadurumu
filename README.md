@@ -1,80 +1,80 @@
-# Hava Durumu
+# Weather App
 
-Hava Durumu, React Native ve TypeScript kullanılarak oluşturulmuş basit bir hava durumu uygulamasıdır. Uygulama, OpenWeatherMap API'sini kullanarak güncel hava durumu bilgilerini sunar.
+Weather App is a simple weather application built using React Native and TypeScript. The app provides current weather information using the OpenWeatherMap API.
 
-## Özellikler
+## Features
 
-- Şehir adına göre hava durumu bilgilerini getirme
-- Sıcaklık, nem ve hava durumu açıklamaları
-- Modern ve şık bir kullanıcı arayüzü
+- Fetch weather information by city name
+- Display temperature, humidity, and weather descriptions
+- Modern and stylish user interface
 
-## Gereksinimler
+## Requirements
 
 - Node.js (>= 14.x)
 - React Native CLI
-- Android Studio veya Xcode (iOS için)
+- Android Studio or Xcode (for iOS)
 
-## Kurulum
+## Installation
 
-1. Projeyi klonlayın:
+1. Clone the project:
 
-   ```bash
-   git clone https://github.com/madtethys/havadurumu.git
-   cd havadurumu
-   ```
+    ```bash
+    git clone https://github.com/madtethys/havadurumu.git
+    cd havadurumu
+    ```
 
-2. Bağımlılıkları yükleyin:
+2. Install dependencies:
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
-3. Android veya iOS için platform bağımlılıklarını kurun:
+3. Install platform dependencies for Android or iOS:
 
-   Android:
-   ```bash
-   npx react-native run-android
-   ```
+    Android:
+    ```bash
+    npx react-native run-android
+    ```
 
-   iOS (macOS gerektirir):
-   ```bash
-   npx react-native run-ios
-   ```
+    iOS (requires macOS):
+    ```bash
+    npx react-native run-ios
+    ```
 
-## API Anahtarı Ekleme
+## Adding API Key
 
-Hava durumu verilerini almak için OpenWeatherMap API anahtarına ihtiyacınız olacak.
+You will need an OpenWeatherMap API key to fetch weather data.
 
-1. [OpenWeatherMap](https://openweathermap.org/) sitesinden API anahtarınızı alın.
-2. `App.tsx` dosyasındaki `API_KEY` değişkenine kendi API anahtarınızı ekleyin:
+1. Get your API key from [OpenWeatherMap](https://openweathermap.org/).
+2. Add your API key to the `API_KEY` variable in the `App.tsx` file:
 
-   ```typescript
-   const API_KEY = 'API_ANAHTARINIZ';
-   ```
+    ```typescript
+    const API_KEY = 'YOUR_API_KEY';
+    ```
 
-## Kullanım
+## Usage
 
-1. Uygulama başlatıldıktan sonra, giriş alanına bir şehir adı yazın.
-2. "Get Weather" butonuna basarak hava durumu bilgilerini görüntüleyin.
+1. After launching the app, enter a city name in the input field.
+2. Press the "Get Weather" button to display the weather information.
 
-## Proje Yapısı
+## Project Structure
 
-- **App.tsx**: Ana uygulama bileşeni. Şehir bilgisini alır ve API isteği yapar.
-- **components/Weather.tsx**: Hava durumu verilerini gösteren bileşen.
-- **styles**: Uygulamanın stil dosyaları.
+- **App.tsx**: Main application component. Takes city input and makes API requests.
+- **components/Weather.tsx**: Component that displays weather data.
+- **styles**: Application style files.
 
-## Kullanılan Teknolojiler
+## Technologies Used
 
-- **React Native**: Mobil uygulama geliştirme için kullanılan framework.
-- **TypeScript**: Statik tür denetimi ve daha güvenli kod yazma olanağı sağlar.
-- **Axios**: HTTP istekleri yapmak için kullanılır.
-- **OpenWeatherMap API**: Hava durumu verilerini sağlayan API.
+- **React Native**: Framework for mobile app development.
+- **TypeScript**: Provides static type checking and safer code.
+- **Axios**: Used for making HTTP requests.
+- **OpenWeatherMap API**: API providing weather data.
 
-## Geliştirme
+## Development
 
-1. Uygulamayı geliştirmek için `npm start` komutuyla geliştirme modunu başlatabilirsiniz.
-2. Kod değişikliklerini cihazda görmek için uygulamayı canlı olarak yeniden yükleyebilirsiniz.
+1. Start the development mode with `npm start`.
+2. You can live reload the app to see code changes on the device.
 
-## Lisans
+## License
 
-Bu proje Apache License 2.0 ile lisanslanmıştır. Detaylar için [LICENSE](./LICENSE) dosyasına bakabilirsiniz.
+This project is licensed under the Apache License 2.0. For details, see the [LICENSE](./LICENSE) file.
